@@ -84,6 +84,7 @@ h2{
     display:flex;
     flex-direction: column;
     align-items: center;
+    border:1px solid rgb(17, 255, 97);
     
 
    
@@ -155,6 +156,8 @@ a:hover{
     
     width:30%;
     text-align: center;
+
+    border:2px solid red;
     
    
 }
@@ -163,6 +166,8 @@ a:hover{
     justify-content: space-between;
     height: 30em;
     width: 70%;
+
+  
     
     
 
@@ -205,6 +210,9 @@ button:hover{
     background: black;
     color:white;
 }
+#img1{
+    border:2px solid red;
+}
 
 /* end of footer */
 
@@ -214,24 +222,107 @@ button:hover{
 @media(max-width: 500px){
     nav{
         flex-direction: column; 
+
         border:1px solid red;
     
     }
     nav a{
-        border: 2px solid black;
-        text-decoration: none;
-        /* padding:4% 50%;  */
-        /* margin-right: .5%; */
-    
+      width:100%;
+      text-align: center;
     }
  
     h1,h2{
+        font-size: 4rem;
         text-align: center;
     }
-    .body-img{
-        flex-direction: column;
+    .bottom-body{
+        flex-direction:column ;
+
+        border:5px solid greenyellow;
     }
+    .body-img{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+
+        border:5px solid blue;
+    }
+    .background-img{
+        margin: 2.5%;
+    }
+    #img1, #img2, #img3,#img4{
+        margin-bottom: 5%;
+        
+    }
+    .body-p{
+        
+        width: 100%;
+    }
+    .footer{
+        padding: 10% 0;
+    }
+    button{
+        padding: 3%;
+    }
+  
+.body-p p{
+    text-align: center;
+}
 
 
+}
+/* Tablet */
+@media (max-width:800px){
+    /* nav{
+        flex-direction: column; 
 
+        border:1px solid red;
+    
+    }
+    nav a{
+      width:100%;
+      text-align: center;
+    } */
+ 
+    /* h1,h2{
+        font-size: 4rem;
+        text-align: center;
+    } */
+    .bottom-body{
+        flex-direction:column ;
+
+        border:5px solid greenyellow;
+    }
+    .body-img{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+
+        border:5px solid blue;
+    }
+    .background-img{
+        margin: 2.5%;
+    }
+    #img1, #img2, #img3,#img4{
+        margin-bottom: 5%;
+        
+    }
+    .body-p{
+        
+        width: 100%;
+    }
+    .footer{
+        padding: 10% 0;
+    }
+    button{
+        padding: 3%;
+    }
+  
+.body-p p{
+    text-align: center;
+}
 }
